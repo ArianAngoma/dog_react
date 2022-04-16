@@ -18,7 +18,6 @@ export const breedReducer = (state = initialState, action: any) => {
         breeds: [...action.payload],
       };
     case types.addBreed:
-      console.log(action.payload);
       return {
         ...state,
         activeBreeds: [...action.payload],

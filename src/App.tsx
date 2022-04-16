@@ -3,6 +3,7 @@ import {Row, Col} from 'antd';
 
 import {Breeds} from './components/Filters/Breeds';
 import {store} from './store/store';
+import {ImageBreeds} from './components/ImageBreed/ImageBreeds';
 import 'antd/dist/antd.css';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <Provider store={store}>
       <Row>
         <Col span={18} push={6}>
-          Image
+          <ImageBreeds/>
         </Col>
         <Col span={6} pull={18}>
           <Breeds/>

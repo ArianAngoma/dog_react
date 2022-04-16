@@ -5,7 +5,7 @@ export const fetchBreeds = (method = 'GET') => {
   return fetch(url);
 };
 
-export const fetchSubBreeds = (breed: string, method = 'GET') => {
-  const url = `${baseUrl}/${breed}/hound/list`;
+export const fetchImageDog = (endpoint: string, method = 'GET') => {
+  const url = `${baseUrl}/breed${endpoint}images/random/10`;
   return fetch(url);
 };
