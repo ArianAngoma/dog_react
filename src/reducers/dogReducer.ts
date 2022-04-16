@@ -12,8 +12,7 @@ export const dogReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case types.dogSetImage:
       return {
-        ...state,
-        ...action.payload,
+        dogs: [...action.payload],
       };
     default:
       return state;
