@@ -2,17 +2,26 @@ import {types} from '../types/types';
 
 interface IBreed {
   breeds: string[];
+  activeBreeds: string[];
 }
 
 const initialState: IBreed = {
   breeds: [],
+  activeBreeds: [],
 };
 
 export const breedReducer = (state = initialState, action: any) => {
   switch (action.type) {
-    case types.addBreed:
+    case types.breadLoad:
       return {
-        dogs: [...action.payload],
+        ...state,
+        breeds: [...action.payload],
+      };
+    case types.addBreed:
+      console.log(action.payload);
+      return {
+        ...state,
+        activeBreeds: [...action.payload],
       };
     default:
       return state;

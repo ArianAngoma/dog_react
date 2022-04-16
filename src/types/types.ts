@@ -1,4 +1,5 @@
 export const types = {
-  dogSetImage: '[dog] Set Image',
   addBreed: '[breed] Add addBreed',
+  breadLoad: '[breed] Load Breed',
+  dogSetImage: '[dog] Set Image',
 };
