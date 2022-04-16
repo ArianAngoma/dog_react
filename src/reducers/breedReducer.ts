@@ -10,7 +10,7 @@ const initialState: IBreed = {
 
 export const breedReducer = (state = initialState, action: any) => {
   switch (action.type) {
-    case types.breedSet:
+    case types.addBreed:
       return {
         dogs: [...action.payload],
       };

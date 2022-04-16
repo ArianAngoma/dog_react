@@ -26,7 +26,7 @@ export const Breeds = () => {
           children: data.message[breed].map((subBreed: string) => {
             return ({
               title: subBreed,
-              key: `/${breed}/${subBreed}`,
+              key: `/${breed}/${subBreed}/`,
             });
           }),
         });
