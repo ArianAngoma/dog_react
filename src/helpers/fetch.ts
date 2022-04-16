@@ -6,6 +6,6 @@ export const fetchBreeds = (method = 'GET') => {
 };
 
 export const fetchImageDog = (endpoint: string, method = 'GET') => {
-  const url = `${baseUrl}/breed${endpoint}images/random/10`;
+  const url = `${baseUrl}/breed${endpoint}images/random/20`;
   return fetch(url);
 };
